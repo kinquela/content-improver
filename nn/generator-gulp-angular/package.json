@@ -1,0 +1,121 @@
+{
+  "name": "generator-gulp-angular",
+  "version": "0.12.1",
+  "preferGlobal": true,
+  "description": "Yeoman generator for AngularJS with Gulp",
+  "keywords": [
+    "yeoman-generator",
+    "angular",
+    "gulp",
+    "restangular",
+    "ui-router",
+    "bootstrap",
+    "angular-material",
+    "foundation",
+    "sass",
+    "less",
+    "es6",
+    "babel",
+    "traceur",
+    "typescript",
+    "coffeescript",
+    "jade",
+    "haml",
+    "webpack",
+    "jshint"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Matthieu Lux & Mehdy Dara"
+  },
+  "contributors": [
+    {
+      "name": "Matthieu Lux",
+      "email": "matthieu.lux@gmail.com",
+      "url": "https://github.com/Swiip"
+    },
+    {
+      "name": "Mehdy Dara",
+      "email": "mdara@eleven-labs.com",
+      "url": "http://eleven-labs.com/"
+    }
+  ],
+  "files": [
+    "app"
+  ],
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swiip/generator-gulp-angular.git"
+  },
+  "scripts": {
+    "pretest": "./scripts/prepare-test.sh",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -- test/node test/template && ./node_modules/.bin/mocha test/inception/test-inception.js -ig protractor",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "dependencies": {
+    "chalk": "~1.0.0",
+    "lodash": "~3.9.3",
+    "slash": "~1.0.0",
+    "underscore.string": "~3.1.1",
+    "yeoman-generator": "~0.20.1",
+    "yosay": "~1.0.4"
+  },
+  "devDependencies": {
+    "bluebird": "~2.9.30",
+    "bower": "~1.4.1",
+    "chai": "~2.3.0",
+    "chai-as-promised": "~5.1.0",
+    "commander": "~2.8.1",
+    "coveralls": "~2.11.2",
+    "cross-spawn": "~0.4.1",
+    "ejs": "~2.3.1",
+    "fixture-stdout": "~0.2.1",
+    "istanbul": "~0.3.15",
+    "js-beautify": "~1.5.6",
+    "mkdirp": "~0.5.1",
+    "mocha": "~2.2.5",
+    "mocha-lcov-reporter": "0.0.2",
+    "mz": "~2.0.0",
+    "recursive-readdir": "~1.2.1",
+    "sinon": "~1.15.3",
+    "sinon-chai": "~2.8.0",
+    "wrench": "1.5.8"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "gitHead": "72b93b52aead1e04bf408e3157087b80c050fea1",
+  "bugs": {
+    "url": "https://github.com/swiip/generator-gulp-angular/issues"
+  },
+  "homepage": "https://github.com/swiip/generator-gulp-angular#readme",
+  "_id": "generator-gulp-angular@0.12.1",
+  "_shasum": "873dc8d48f39456c03baf4b787fc9f1ca43eb715",
+  "_from": "generator-gulp-angular@",
+  "_npmVersion": "2.11.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "zckrs",
+    "email": "mdara@eleven-labs.com"
+  },
+  "dist": {
+    "shasum": "873dc8d48f39456c03baf4b787fc9f1ca43eb715",
+    "tarball": "http://registry.npmjs.org/generator-gulp-angular/-/generator-gulp-angular-0.12.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "swiip",
+      "email": "matthieu.lux@gmail.com"
+    },
+    {
+      "name": "zckrs",
+      "email": "mdara@eleven-labs.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/generator-gulp-angular/-/generator-gulp-angular-0.12.1.tgz"
+}
